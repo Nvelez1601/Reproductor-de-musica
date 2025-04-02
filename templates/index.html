@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reproductor con Jamendo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="player-container">
+        <h1>Reproductor de Música Libre</h1>
+        
+        <div class="now-playing">
+            <img id="current-song-image" src="https://via.placeholder.com/150" alt="Portada">
+            <div>
+                <h3 id="current-song-name">Selecciona una canción</h3>
+                <p id="current-song-artist"></p>
+            </div>
+        </div>
+        
+        <audio id="audio-player" controls></audio>
+        
+        <div class="controls">
+            <button id="prev-btn">Anterior</button>
+            <button id="play-btn">Reproducir</button>
+            <button id="next-btn">Siguiente</button>
+        </div>
+        
+        <div class="playlist">
+            <h3>Top Canciones en Jamendo</h3>
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
