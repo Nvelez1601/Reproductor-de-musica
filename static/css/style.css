@@ -70,3 +70,69 @@ button {
     margin-right: 10px;
     border-radius: 3px;
 }
+
+.player-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.player-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Contenedor de la lista de canciones */
+.playlist-container {
+    width: 300px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Reproductor principal */
+.player-main {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para la lista */
+.playlist h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.playlist li:hover {
+    background: #e9ecef;
+}
+
+.playlist li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
